@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خدمة DZ</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #008000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a {
+      text-decoration: none;
+      color: #008000;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero input {
+      padding: 0.5rem;
+      width: 60%;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .category {
+      padding: 1rem;
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>خدمة DZ</h1>
+    <p>منصة لربط الحرفيين بالزبائن في الجزائر</p>
+  </header>
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">التسجيل</a>
+    <a href="#">كن حرفي معنا</a>
+    <a href="#">التقييمات</a>
+    <a href="#">اتصل بنا</a>
+  </nav>
+  <section class="hero">
+    <h2>ابحث عن حرفي</h2>
+    <input type="text" placeholder="مثال: كهربائي في البويرة">
+  </section>
+  <section class="categories">
+    <div class="category">كهربائي</div>
+    <div class="category">سباك</div>
+    <div class="category">نجار</div>
+    <div class="category">بناء</div>
+    <div class="category">ميكانيكي</div>
+    <div class="category">حداد</div>
+  </section>
+  <footer>
+    &copy; 2025 خدمة DZ - كل الحقوق محفوظة
+  </footer>
+</body>
+</html>
