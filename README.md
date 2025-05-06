@@ -61,6 +61,63 @@
   <div class="section">
     <div class="title">🛠️ تسجيل الحرفيين</div>
     <p>هل أنت حرفي؟ أنشئ حسابك وابدأ في تلقي الطلبات!</p>
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الحرفيين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تسجيل الحرفيين</h1>
+        <p>مرحبًا بك في صفحة تسجيل الحرفيين. إذا كنت حرفيًا ترغب في الانضمام إلى مجتمعنا، يرجى ملء النموذج التالي.</p>
+
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="specialty">الاختصاص أو الحرفة:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="نجار">نجار</option>
+                <option value="كهربائي">كهربائي</option>
+                <option value="سباك">سباك</option>
+                <!-- أضف المزيد من الحرف هنا -->
+            </select>
+
+            <label for="experience">مدة الخبرة:</label>
+            <select id="experience" name="experience" required>
+                <option value="1-3">1-3 سنوات</option>
+                <option value="4-6">4-6 سنوات</option>
+                <option value="7+">7 سنوات وأكثر</option>
+            </select>
+
+            <label for="location">الموقع (المدينة/المنطقة):</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="id_card">صورة من بطاقة الهوية:</label>
+            <input type="file" id="id_card" name="id_card" accept="image/*" required>
+
+            <label for="certificates">صورة من الشهادات أو تراخيص العمل:</label>
+            <input type="file" id="certificates" name="certificates" accept="image/*" required>
+
+            <label for="notes">ملاحظات إضافية:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <p>قبل التسجيل، يرجى قراءة <a href="/terms">شروط الاستخدام</a>.</p>
+
+            <button type="submit">تسجيل الآن</button>
+        </form>
+    </div>
+</body>
+</html>
     <a href="#" class="button">سجل الآن</a>
   </div>
 
